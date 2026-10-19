@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MiniLoja</title>
+  <meta name="theme-color" content="#0d6efd">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topo sticky-top">
+  <nav class="container d-flex align-items-center justify-content-between py-3" aria-label="Menu principal">
+    <a href="#/" class="marca">MiniLoja</a>
+    <a href="#/carrinho" class="btn btn-outline-primary">Carrinho <span id="badge" class="badge bg-primary d-none">0</span></a>
+  </nav>
+</header>
+<main id="app" class="container py-4"></main>
+<p id="mensagem" class="container text-success" role="status" aria-live="polite"></p>
+<footer class="container py-4 text-secondary small border-top">Projeto acadêmico — Guilherme L. de Freitas e Gustavo G. Nunes.</footer>
+<script src="vendor/axios.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
